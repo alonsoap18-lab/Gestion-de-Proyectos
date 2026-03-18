@@ -1,0 +1,10 @@
+{
+  "name": "icaa-constructora",
+  "version": "2.0.0",
+  "description": "Sistema de Gestión - Grupo ICAA Constructora",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend":  "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev"
+  }
+}
