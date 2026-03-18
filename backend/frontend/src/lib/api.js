@@ -1,7 +1,10 @@
 // src/lib/api.js
 import axios from 'axios';
 
-const api = axios.create({ baseURL: '/api', timeout: 20000 });
+const api = axios.create({
+  baseURL: 'https://grupo-icaa-backend.onrender.com',
+  timeout: 20000
+});
 
 api.interceptors.request.use(cfg => {
   const token = localStorage.getItem('icaa_token');
@@ -22,3 +25,4 @@ api.interceptors.response.use(
 );
 
 export default api;
+
